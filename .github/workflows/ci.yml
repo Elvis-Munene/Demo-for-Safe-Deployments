@@ -1,0 +1,9 @@
+name: CI
+on: [pull_request, push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Running tests..."; exit 0  # Replace with actual tests
